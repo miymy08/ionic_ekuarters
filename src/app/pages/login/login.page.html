@@ -1,0 +1,25 @@
+<ion-header side="center">
+  <ion-toolbar color="warning" mode="ios">
+    <ion-title color="light">Ekuarter Login</ion-title>
+  </ion-toolbar>
+  <div class="vertical-center">
+    <div class="center">
+      <ion-img style=" width: 230px; height: 230px;" src="assets/img/penang.png"></ion-img>
+    </div>
+  </div>
+
+  <ion-content padding>
+
+    <ion-item class="ion-no-border">
+      <ion-label position="floating">Id Pengguna</ion-label>
+      <ion-input type="text" [(ngModel)]="LoginPengguna"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Kata Laluan</ion-label>
+      <ion-input type="password" [(ngModel)]="KataLaluan"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block"  (click)="login()">Login</ion-button>
+
+  </ion-content>

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Ekuarters Status</ion-title>
+    <ion-button slot="primary" color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-card *ngFor="let data of maklumat">
+      <ion-card-header>
+        <ion-card-subtitle>No. Rujukan</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.NoRujukan}}</ion-card-title>
+
+        <h4></h4>
+
+        <ion-card-subtitle>Nama</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.Nama}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+
+        <h4></h4>
+
+        <ion-card-subtitle>Status Pemohon</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.StatusPemohon}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+
+      </ion-card-header>
+    </ion-card>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,202 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start" mode="ios">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Maklumat Tanggungan</ion-title>
+    <ion-button slot="primary" color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-card *ngFor="let data of maklumat">
+      <ion-card-header>
+        <ion-card-subtitle>Nama Tanggungan</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.NamaTang}}</ion-card-title>
+        
+        <h4></h4>
+  
+        <ion-card-subtitle>No.KP Baru</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.NoKPTang}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+        
+        <h4></h4>
+  
+        <ion-card-subtitle>Kod</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.BilTanggung}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+              
+        <h4></h4>
+  
+        <ion-card-subtitle>Jantina</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.NamaJantina}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+              
+<!--         <h4></h4>
+  
+        <ion-card-subtitle>Bilangan Tanggungan</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title style="font-size:22px">{{data.NamaTanggung}}</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle> -->
+          
+      </ion-card-header>
+    </ion-card>
+  
+  </ion-list>
+
+
+<!--   <ion-list>
+
+
+    <ion-item-sliding *ngFor="let data of maklumat">
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Bilangan Tanggungan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaTanggung}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Nama Tanggungan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaTang}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> No. KP Tanggungan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NoKPTang}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Tarikh Lahir Tanggungan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Tkh_LahirTang}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Kod</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.BilTanggung}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Jantina</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaJantina}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+    </ion-item-sliding>
+  </ion-list> -->
+
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button (click)="goHome()">
+        <ion-icon name="Home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="goStatus()">
+        <ion-icon name="clipboard"></ion-icon>
+        <ion-label>Status</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

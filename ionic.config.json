@@ -1,0 +1,7 @@
+{
+  "name": "kuarter2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

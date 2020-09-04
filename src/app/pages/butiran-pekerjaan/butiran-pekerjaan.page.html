@@ -1,0 +1,339 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Butiran Pekerjaan</ion-title>
+    <ion-button slot="primary" color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let data of maklumat">
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Jawatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaJawatan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Status Jawatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.StaJawatan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Gred Jawatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaGred}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Kumpulan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Kumpulan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Perkhidmatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaPerkhidmatan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Tarikh Perkhidmatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.TkhPerkhidmatan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Tarikh Bersara</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.TkhBersara}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Gaji Pokok</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>RM {{data.Gaji}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Elaun </h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>RM {{data.Elaun}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Jabatan </h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaJabatan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4>Cawangan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Cawangan}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Ketua Jabatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.KetuaJab}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Alamat Jabatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Alamat_Jab}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Telefon Jabatan</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.TelJab}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> PTJ</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.PTJ}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button (click)="goHome()">
+        <ion-icon name="Home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="goStatus()">
+        <ion-icon name="clipboard"></ion-icon>
+        <ion-label>Status</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+    <ion-button slot="primary" color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let data of maklumat">
+
+  <ion-card color="light">
+    <ion-card-header>
+      Selamat Datang
+    </ion-card-header>
+  </ion-card>
+
+  <div class="box">
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h6> {{data.Nama}}</h6>
+              {{data.NamaJabatan}}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+</ion-content>

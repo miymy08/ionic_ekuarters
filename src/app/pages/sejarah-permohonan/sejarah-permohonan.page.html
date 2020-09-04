@@ -1,0 +1,235 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start" mode="ios">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Sejarah Permohonan</ion-title>
+    <ion-button slot="primary" color="danger" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-card *ngFor="let data of maklumat">
+    <ion-card-header>
+      <ion-card-subtitle>No. Rujukan</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.NoRujukan}}</ion-card-title>
+      
+      <h4></h4>
+
+      <ion-card-subtitle>Tarikh Memohon</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.Tkh_Pohon}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+      
+      <h4></h4>
+
+      <ion-card-subtitle>Kuarters</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.Alamat}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+            
+      <h4></h4>
+
+      <ion-card-subtitle>Tarikh Tawar</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.Tkh_Tawaran}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+            
+      <h4></h4>
+
+      <ion-card-subtitle>Status</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.NamaStatus}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+            
+      <h4></h4>
+
+      <ion-card-subtitle>Status Pemohon</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.StatusPemohon}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+                  
+      <h4></h4>
+
+      <ion-card-subtitle>Alasan</ion-card-subtitle>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title style="font-size:24px">{{data.SebabTolakKIV}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+
+
+    </ion-card-header>
+  </ion-card>
+
+</ion-list>
+
+<!--   <ion-list>
+  <ion-item-sliding *ngFor="let data of maklumat">
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> No. Rujukan</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.NoRujukan}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Tarikh Memohon</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.Tkh_Pohon}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Kuarters</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.Alamat}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Tarikh Tawar</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.Tkh_Tawaran}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Status</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.NamaStatus}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Status Pemohon </h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.StatusPemohon}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <div class="box">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="ion-text-uppercase">
+                <h4> Alasan</h4>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-card>
+      <ion-item>
+        <ion-label>{{data.SebabTolakKIV}}</ion-label>
+      </ion-item>
+    </ion-card>
+
+  </ion-item-sliding>
+  </ion-list> -->
+
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button (click)="goHome()">
+        <ion-icon name="Home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="goStatus()">
+        <ion-icon name="clipboard"></ion-icon>
+        <ion-label>Status</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

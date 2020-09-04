@@ -1,0 +1,298 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Butiran Maklumat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+
+    <ion-item-sliding *ngFor="let data of maklumat">
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Nama</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Nama}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> No.KP</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NoKP}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Bangsa</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaBangsa}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Agama</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaAgama}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Jantina</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaJantina}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Tarikh Lahir</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.TkhLahir}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Status Kahwin</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaKahwin}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Telefon(R)</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.TelR}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Telefon(HP)</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NoTel}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Alamat </h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label text-wrap>{{data.Alamat_1}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Daerah</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Daerah}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Poskod</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.Poskod}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+      <div class="box">
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-uppercase">
+                  <h4> Negeri</h4>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item>
+          <ion-label>{{data.NamaNegeri}}</ion-label>
+        </ion-item>
+      </ion-card>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button (click)="goHome()">
+        <ion-icon name="Home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="goStatus()">
+        <ion-icon name="clipboard"></ion-icon>
+        <ion-label>Status</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
